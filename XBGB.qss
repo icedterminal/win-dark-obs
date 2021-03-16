@@ -23,7 +23,7 @@
     button background................rgb(53,53,53)
     button background hover..........rgb(73,73,73)
     button background pressed........rgb(45,45,45)
-    button text...........rgb(224,224,224)
+    button text..................rgb(224,224,224)
     borders and slider.......rgb(104,118,138)
     input background.........rgb(53,57,63)
 
@@ -44,13 +44,13 @@ OBSTheme {
     light: rgb(88,87,88);
     mid: rgb(58,57,58);
     dark: rgb(31,30,31);
-    shadow: rgb(11,10,11);
+    shadow: rgb(8, 8, 8);
 
-    highlight: rgb(73,73,73);
-    highlightText: rgb(0,0,0);
+    highlight: rgb(104,118,138);
+    highlightText: rgb(255,255,255);
 
-    link: rgb(73,73,73); /* OBS blue */
-    linkVisited: rgb(73,73,73); /* OBS blue */
+    link: rgb(104,118,138);
+    linkVisited: rgb(104,118,138);
 }
 
 OBSTheme::disabled {
@@ -72,10 +72,10 @@ QMainWindow {
 
 QWidget {
     background-color: rgb(31,31,31);
-    alternate-background-color: rgb(31,31,31);
+    alternate-background-color: rgb(45,45,45);
     color: rgb(255, 255, 255);
-    selection-background-color: rgb(53,53,53);
-    selection-color: rgb(53,53,53);
+    selection-background-color: rgb(104,118,138);
+    selection-color: rgb(255,255,255);
     font-family: "Bahnschrift", "Roboto", 'Segoe UI', sans-serif; /* Absolutely NOT defining trash Arial. */
     font-size: 13px;
     font-weight: normal;
@@ -231,6 +231,31 @@ QCheckBox::indicator:unchecked:disabled {
 	image: url(./xbgb/checkbox_unchecked_disabled.svg);
 }
 
+/* Radio Buttons */
+
+QRadioButton::indicator {
+	width: 18px;
+	height: 18px;
+}
+
+QRadioButton::indicator:unchecked {
+	image: url(./xbgb/radio.svg);
+}
+
+QRadioButton::indicator:checked {
+	border: none;
+	outline: none;
+	image: url(./xbgb/radio_selected.svg);
+}
+
+QRadioButton::indicator:unchecked:disabled {
+	image: url(./xbgb/radio_disabled.svg);
+}
+
+QRadioButton::indicator:checked:disabled {
+	outline: none;
+	image: url(./xbgb/radio_selected_disabled.svg);
+}
 
 /* ScrollBars */
 
@@ -249,7 +274,7 @@ QScrollBar::handle:vertical {
     background-color: rgb(53,53,53);
     min-height: 20px;
     margin: 2px;
-    border-radius: 5px;
+    border-radius: 4px;
     border-width: 1px;
     border: none;
 }
@@ -271,18 +296,22 @@ QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical, QScrollBar::add-
 }
 
 QScrollBar:horizontal {
-    background-color: rgb(58,57,58);
-    height: 14px;
+    background-color: rgb(31, 31, 31);
+    height: 12px;
     margin: 0px;
 }
 
 QScrollBar::handle:horizontal {
-    background-color: rgb(76,76,76);
+    background-color: rgb(53,53,53);
     min-width: 20px;
     margin: 2px;
-    border-radius: 0px;
+    border-radius: 4px;
     border-width: 1px;
     border: none;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: rgb(73,73,73);
 }
 
 QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
@@ -427,6 +456,7 @@ QComboBox {
     background-color: rgb(53,53,53);
     padding: 2px 2px 2px 10px;
     border:1px solid rgb(53,53,53);
+    color: rgb(255,255,255);
 }
 
 QComboBox:hover {
@@ -446,7 +476,7 @@ QComboBox::down-arrow {
 }
 
 QComboBox:on {
-    background-color: rgb(31,30,31);
+    background-color: rgb(45,45,45)
 }
 
 QComboBox:editable {
