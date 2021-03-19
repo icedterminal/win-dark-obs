@@ -5,11 +5,21 @@
     Author: icedterminal
     Source: https://github.com/icedterminal/xbgb-obs
     License: GNU v3
-    Icons: The icons in this theme are from MDL Assets. These icons
-    are NOT open source. They here to keep the consistency and
-    follow the chosen design language. (C) Microsoft Corporation.
+    Version: 1.0.0
+    Note: The intended OS for this theme is Windows 10. While you
+    can use it for older versions or Linux or macOS, it won't fit
+    the rest of the OS styling quite right.
+    
+    Icons: The icons in this theme are from MDL Assets font. There
+    are currently no restrictions from MS in their use for private
+    applications. So as long as the font itself is not embedded.
+    Which it is not. This does not mean they are open source.
+
+    Link: https://docs.microsoft.com/en-us/typography/fonts/font-faq
+    
     Font: The font used is Bahnschrift and is already installed.
     It comes with Windows 10. This is the font used for Game Bar.
+    If you do not have this font present, a fallback will be used.
 
     While Microsoft's design language is always inconsistent,
     I wanted OBS to look like the Game Bar. I feel it fit
@@ -855,7 +865,7 @@ LockedCheckBox::indicator:checked {
 }
 
 LockedCheckBox::indicator:unchecked {
-    image: url(:res/images/unlocked.svg);
+    image: url(./xbgb/unlocked.svg);
 }
 
 /* Visibility CheckBox */
@@ -870,7 +880,7 @@ VisibilityCheckBox::indicator:checked {
 }
 
 VisibilityCheckBox::indicator:unchecked {
-    image: url(:res/images/invisible.svg);
+    image: url(./xbgb/invisible.svg);
 }
 
 * [themeID="trashIcon"] {
