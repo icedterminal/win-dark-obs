@@ -1,21 +1,36 @@
-/******************************************************************************/
-/*   Copyright (C) 2014-2015 by Philippe Groarke <philippe.groarke@gmail.com> */
-/*                                                                            */
-/*                                                                            */
-/*   This program is free software: you can redistribute it and/or modify     */
-/*   it under the terms of the GNU General Public License as published by     */
-/*   the Free Software Foundation, either version 2 of the License, or        */
-/*   (at your option) any later version.                                      */
-/*                                                                            */
-/*   This program is distributed in the hope that it will be useful,          */
-/*   but WITHOUT ANY WARRANTY; without even the implied warranty of           */
-/*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the            */
-/*   GNU General Public License for more details.                             */
-/*                                                                            */
-/*                                                                            */
-/*   You should have received a copy of the GNU General Public License        */
-/*   along with this program.  If not, see <http://www.gnu.org/licenses/>.    */
-/******************************************************************************/
+/******************************************************************
+
+    Title: Win 11 Dark
+    Desc: A dark theme that follows similar desing to Windows 11.
+    Author: icedterminal
+    Source: https://github.com/icedterminal/win-dark-obs
+    License: GNU v3
+    Version: 1.0.0
+    Note: The intended OS for this theme is Windows 11. While you
+    can use it for older versions or Linux or macOS, it won't fit
+    the rest of the OS styling quite right.
+    
+    Icons: The icons in this theme are from MDL Assets font. There
+    are currently no restrictions from MS in their use for private
+    applications. So as long as the font itself is not embedded.
+    Which it is not. This does not mean they are open source.
+
+    Link: https://docs.microsoft.com/en-us/typography/fonts/font-faq
+    
+    Font: The font used is Bahnschrift and is already installed.
+    It comes with Windows 10 and later. This is the default font
+    used for Game Bar. If you do not have this font present,
+    a fallback will be used.
+
+    While Microsoft's design language is always inconsistent,
+    I wanted OBS to look like the Game Bar. I feel it fit
+    the purpose. I gave it my best effort. QT is limited so
+    I was unable to add things like box shadow and animations.
+
+    This theme is a fork of the default Dark theme that is
+    bundled with OBS by Philippe Groarke,
+
+******************************************************************/
 
 /* Colors */
 
